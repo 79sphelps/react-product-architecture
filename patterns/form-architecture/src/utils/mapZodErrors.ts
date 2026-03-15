@@ -1,6 +1,4 @@
 /**
- * File: mapZodErrors.ts
- *
  * Responsibility:
  * Normalizes Zod validation errors into a predictable
  * key/value structure usable by UI components.

@@ -1,6 +1,4 @@
 /**
- * File: DynamicField.tsx
- *
  * Responsibility:
  * Renders form fields dynamically based on
  * configuration objects.

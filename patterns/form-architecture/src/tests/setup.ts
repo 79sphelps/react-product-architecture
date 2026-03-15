@@ -1,6 +1,4 @@
 /**
- * File: setup.ts
- *
  * Responsibility:
  * Global test setup for React component tests.
  *

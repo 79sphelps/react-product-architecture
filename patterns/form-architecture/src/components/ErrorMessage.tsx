@@ -1,6 +1,4 @@
 /**
- * File: ErrorMessage.tsx
- *
  * Responsibility:
  * Displays validation error messages associated
  * with form fields in an accessible way.

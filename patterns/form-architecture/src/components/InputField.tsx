@@ -1,6 +1,4 @@
 /**
- * File: InputField.tsx
- *
  * Responsibility:
  * Provides a reusable text input integrated
  * with the schema-driven form architecture.

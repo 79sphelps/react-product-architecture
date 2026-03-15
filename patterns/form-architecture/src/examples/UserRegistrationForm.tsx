@@ -1,6 +1,4 @@
 /**
- * File: UserRegistrationForm.tsx
- *
  * Responsibility:
  * Demonstrates the full schema-driven,
  * configuration-driven form architecture.

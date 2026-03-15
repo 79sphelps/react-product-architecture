@@ -1,17 +1,10 @@
 # React Product Architecture
 
-A collection of **production-grade React architecture patterns** built with:
+A collection of **production-grade React architecture patterns** built with modern tooling and best practices.
 
-* React
-* TypeScript
-* TailwindCSS
-* Modern testing patterns
-* Accessibility best practices
-* Performance optimization techniques
+This repository serves as a **living reference for scalable frontend architecture patterns used in real-world production systems**.
 
-This repository serves as a **living reference of frontend architecture patterns used in real-world production systems**.
-
-The goal is to demonstrate **how senior and staff-level frontend engineers design scalable React applications**, not just build components.
+The goal is to demonstrate **how senior and staff-level frontend engineers design maintainable React applications**, not just build components.
 
 ---
 
@@ -21,15 +14,15 @@ Most React tutorials focus on **features**.
 
 Real production systems require much more:
 
-• predictable architecture
-• reusable patterns
-• strong typing
-• performance awareness
-• accessibility
-• testing strategy
-• maintainable abstractions
+- predictable architecture
+- reusable patterns
+- strong typing
+- performance awareness
+- accessibility
+- testing strategy
+- maintainable abstractions
 
-This repo demonstrates **how those concerns are solved in production-grade React applications.**
+This repository demonstrates **how those concerns are solved in production-grade React applications.**
 
 ---
 
@@ -37,124 +30,125 @@ This repo demonstrates **how those concerns are solved in production-grade React
 
 Core technologies used throughout the repository:
 
-* **React 18+**
-* **TypeScript**
-* **TailwindCSS**
-* **TanStack Query**
-* **React Hook Form**
-* **Zod**
-* **MSW (Mock Service Worker)**
-* **Jest / React Testing Library**
-* **Playwright**
-* **Framer Motion**
-* **Vite**
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- TanStack Query
+- React Hook Form
+- Zod
+- MSW (Mock Service Worker)
+- Vitest
+- React Testing Library
+- Playwright
+- Framer Motion
 
 ---
 
 # Repository Structure
 
-```
+
 react-product-architecture
 
 /apps
-   dashboard-demo
-   booking-flow-demo
+dashboard-demo
+booking-flow-demo
 
 /patterns
-   form-architecture
-   state-management
-   data-fetching
-   error-handling
-   accessibility
+form-architecture
+data-fetching
+state-management
+error-handling
+accessibility
 
 /performance
-   rendering-optimization
-   virtualization
-   bundle-optimization
+rendering-optimization
+virtualization
+bundle-optimization
 
 /components
-   motion-patterns
-   accessible-components
-   headless-ui-patterns
+motion-patterns
+accessible-components
+headless-ui-patterns
 
 /layouts
-   dashboard-layout
-   admin-layout
-   auth-layout
+dashboard-layout
+admin-layout
+auth-layout
 
 /testing
-   unit-patterns
-   integration-patterns
-   e2e-patterns
+unit-patterns
+integration-patterns
+e2e-patterns
 
 /docs
-   architecture-decisions
-```
+architecture-decisions
+
 
 ---
 
 # Guiding Principles
 
-### 1. Production-First Architecture
+## Production-First Architecture
 
 All examples reflect **patterns used in large-scale production applications**, not toy examples.
 
 ---
 
-### 2. Explicit Architecture Decisions
+## Explicit Architecture Decisions
 
 Each pattern includes documentation explaining:
 
-• why the pattern exists
-• tradeoffs
-• when to use it
-• when NOT to use it
+- why the pattern exists
+- tradeoffs
+- when to use it
+- when NOT to use it
 
 ---
 
-### 3. Type Safety First
+## Type Safety First
 
-TypeScript is used to ensure:
+TypeScript ensures:
 
-• safe API boundaries
-• predictable component contracts
-• reusable abstractions
+- safe API boundaries
+- predictable component contracts
+- reusable abstractions
 
 ---
 
-### 4. Accessibility by Default
+## Accessibility by Default
 
 All UI patterns aim to meet **WCAG accessibility guidelines**.
 
 Examples include:
 
-• keyboard navigation
-• ARIA patterns
-• screen reader compatibility
+- keyboard navigation
+- ARIA patterns
+- screen reader compatibility
 
 ---
 
-### 5. Performance Consciousness
+## Performance Awareness
 
 Examples include:
 
-• memoization strategies
-• virtualization
-• render control
-• bundle splitting
+- memoization strategies
+- virtualization
+- render control
+- bundle splitting
 
 ---
 
-# Patterns Included
+# Architecture Patterns Included
 
 ## Form Architecture
 
 Production-level form architecture using:
 
-* React Hook Form
-* Zod validation
-* reusable field abstractions
-* schema-driven validation
+- React Hook Form
+- Zod validation
+- reusable field abstractions
+- schema-driven validation
 
 ---
 
@@ -162,87 +156,85 @@ Production-level form architecture using:
 
 Modern data-fetching patterns with:
 
-* TanStack Query
-* request caching
-* optimistic updates
-* error boundaries
+- TanStack Query
+- request caching
+- optimistic updates
+- error boundaries
 
 ---
 
 ## State Management
 
-Patterns for:
+Patterns for managing:
 
-* local component state
-* server state
-* global state
-* derived state
+- local component state
+- server state
+- global state
+- derived state
 
 ---
 
 ## Accessibility
 
-Examples of accessible components including:
+Examples include accessible UI patterns such as:
 
-* modals
-* dropdowns
-* keyboard navigation
-* focus traps
+- modals
+- dropdowns
+- keyboard navigation
+- focus traps
 
 ---
 
-## Performance
+## Performance Optimization
 
-Examples of performance optimization:
+Examples include:
 
-* React memo strategies
-* virtualization
-* render partitioning
+- React memo strategies
+- virtualization
+- render partitioning
 
 ---
 
 # Mini Applications
 
-Mini applications simulate **real product features** including:
+Mini applications simulate **real product features**.
 
-### Dashboard Demo
+## Dashboard Demo
 
 Admin dashboard architecture including:
 
-* layout systems
-* data fetching
-* charts
-* filtering
-* table virtualization
+- layout systems
+- data fetching
+- charts
+- filtering
+- table virtualization
 
 ---
 
-### Booking Flow Demo
+## Booking Flow Demo
 
 Multi-step booking flow demonstrating:
 
-* form architecture
-* validation
-* optimistic API interactions
-* error handling
+- form architecture
+- validation
+- optimistic API interactions
+- error handling
 
 ---
 
 # Testing Strategy
 
-Testing patterns include:
+## Unit Testing
 
-### Unit Testing
+Component and utility testing with **Vitest and React Testing Library**.
 
-Component and utility testing with React Testing Library.
+## Integration Testing
 
-### Integration Testing
+Feature-level testing with **mocked API services (MSW)**.
 
-Feature-level testing with mocked API services.
+## End-to-End Testing
 
-### End-to-End Testing
-
-User workflows tested with Playwright.
+User workflows tested with **Playwright**.
 
 ---
 
@@ -250,53 +242,33 @@ User workflows tested with Playwright.
 
 The `/docs` folder contains **Architecture Decision Records (ADR)** explaining:
 
-• why patterns exist
-• tradeoffs considered
-• alternatives rejected
+- why patterns exist
+- tradeoffs considered
+- alternatives rejected
 
 ---
 
-# Utilities
+# Shared Utilities
 
 Reusable utilities discovered during development are extracted into:
 
-```
-/shared/utils
-```
+
+/packages/utils
+
 
 Examples include:
 
-* debouncing
-* error normalization
-* form helpers
-* accessibility helpers
+- debouncing
+- error normalization
+- form helpers
+- accessibility helpers
 
 ---
 
-# Who This Is For
+# Who This Repository Is For
 
 This repository is useful for:
 
-• frontend engineers preparing for senior roles
-• engineers learning scalable React architecture
-• teams looking for production-ready patterns
-
----
-
-# Author
-
-Steve Phelps
-Senior Full Stack Engineer
-
-Experience includes work at companies such as:
-
-* Nike
-* Workday
-* Intel
-* McAfee
-
----
-
-# License
-
-MIT
+- frontend engineers preparing for **senior roles**
+- engineers learning **scalable React architecture**
+- teams looking for **production-ready patterns**

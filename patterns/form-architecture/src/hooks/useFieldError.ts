@@ -1,6 +1,4 @@
 /**
- * File: useFieldError.ts
- *
  * Responsibility:
  * Provides a reusable abstraction for retrieving
  * field-level validation errors from React Hook Form.

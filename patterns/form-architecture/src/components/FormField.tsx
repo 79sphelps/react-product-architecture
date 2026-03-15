@@ -1,6 +1,4 @@
 /**
- * File: FormField.tsx
- *
  * Responsibility:
  * Provides a standardized wrapper around form inputs.
  *

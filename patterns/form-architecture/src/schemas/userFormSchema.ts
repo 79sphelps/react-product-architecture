@@ -1,6 +1,4 @@
 /**
- * File: userFormSchema.ts
- *
  * Responsibility:
  * Defines the validation schema used by the schema-driven form system.
  *

@@ -1,6 +1,4 @@
 /**
- * File: userFormFields.ts
- *
  * Responsibility:
  * Defines the configuration used to dynamically
  * render fields for the User Registration form.

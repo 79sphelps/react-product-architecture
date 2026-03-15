@@ -1,6 +1,4 @@
 /**
- * File: formTypes.ts
- *
  * Responsibility:
  * Defines the core TypeScript contracts used by the schema-driven
  * form architecture. These types ensure consistency between:

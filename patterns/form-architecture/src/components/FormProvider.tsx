@@ -1,6 +1,4 @@
 /**
- * File: FormProvider.tsx
- *
  * Responsibility:
  * Provides form context to nested form field components.
  *

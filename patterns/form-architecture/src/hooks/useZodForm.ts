@@ -1,6 +1,4 @@
 /**
- * File: useZodForm.ts
- *
  * Responsibility:
  * Connects React Hook Form with Zod validation to provide
  * schema-driven validation within the form architecture.
