@@ -3,7 +3,6 @@ import { FeatureFlagProvider } from "../../src/context/FeatureFlagProvider"
 import { FeatureGate } from "../../src/components/FeatureGate"
 
 test("renders gated content", () => {
-
   render(
     <FeatureFlagProvider>
       <FeatureGate flag="newDashboard">

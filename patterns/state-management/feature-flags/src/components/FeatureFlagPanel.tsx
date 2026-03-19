@@ -7,7 +7,6 @@ import { useContext } from "react"
 import { FeatureFlagContext } from "../context/FeatureFlagProvider"
 
 export function FeatureFlagPanel() {
-
   const ctx = useContext(FeatureFlagContext)
   if (!ctx) return null
 
@@ -18,12 +17,10 @@ export function FeatureFlagPanel() {
       <legend className="font-bold mb-2">Feature Flags</legend>
 
       {Object.entries(flags).map(([key, value]) => {
-
         const id = `flag-${key}`
 
         return (
           <div key={key} className="flex items-center mb-2">
-
             <input
               id={id}
               type="checkbox"
@@ -31,11 +28,9 @@ export function FeatureFlagPanel() {
               onChange={() => toggleFlag(key as any)}
               aria-checked={value}
             />
-
             <label htmlFor={id} className="ml-2 cursor-pointer">
               {key}
             </label>
-
           </div>
         )
       })}

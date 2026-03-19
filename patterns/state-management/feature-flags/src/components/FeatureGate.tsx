@@ -6,8 +6,6 @@ export function FeatureGate({
   fallback = null,
   children
 }) {
-
   const enabled = useFeatureFlag(flag as FeatureFlagKey)
-
   return enabled ? children : fallback
 }

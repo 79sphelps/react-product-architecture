@@ -24,7 +24,6 @@ export function FeatureGateCombo({
   children,
   fallback = null
 }: Props) {
-
   const ctx = useContext(FeatureFlagContext)
   if (!ctx) return null
 

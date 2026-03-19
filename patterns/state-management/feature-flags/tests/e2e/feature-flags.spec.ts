@@ -1,7 +1,6 @@
 import { test, expect } from "@playwright/test"
 
 test("toggles feature flag", async ({ page }) => {
-
   await page.goto("http://localhost:5173")
 
   const checkbox = page.getByLabel("newDashboard")

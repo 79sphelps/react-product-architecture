@@ -11,7 +11,6 @@ import { useContext } from "react"
 import { FeatureFlagContext } from "../context/FeatureFlagProvider"
 
 export function DynamicFeatureView() {
-
   const ctx = useContext(FeatureFlagContext)
   if (!ctx) return null
 
@@ -19,11 +18,11 @@ export function DynamicFeatureView() {
 
   const { newDashboard, betaFeature, adminPanel } = flags
 
-  // 🧠 Combination logic
+  // Combination logic
   if (newDashboard && betaFeature) {
     return (
       <div className="p-4 bg-green-100 border rounded">
-        <h2 className="font-bold">🚀 Advanced Dashboard</h2>
+        <h2 className="font-bold">Advanced Dashboard</h2>
         <button className="mt-2 px-3 py-1 bg-green-500 text-white rounded">
           AI Insights
         </button>
@@ -34,7 +33,7 @@ export function DynamicFeatureView() {
   if (newDashboard) {
     return (
       <div className="p-4 bg-blue-100 border rounded">
-        <h2 className="font-bold">📊 New Dashboard</h2>
+        <h2 className="font-bold">New Dashboard</h2>
         <button className="mt-2 px-3 py-1 bg-blue-500 text-white rounded">
           Refresh Data
         </button>
@@ -45,7 +44,7 @@ export function DynamicFeatureView() {
   if (betaFeature) {
     return (
       <div className="p-4 bg-yellow-100 border rounded">
-        <h2 className="font-bold">🧪 Experimental UI</h2>
+        <h2 className="font-bold">Experimental UI</h2>
         <button className="mt-2 px-3 py-1 bg-yellow-500 text-white rounded">
           Run Experiment
         </button>
