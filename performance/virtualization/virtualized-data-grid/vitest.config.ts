@@ -1,25 +1,23 @@
-/// <reference types="vitest" />
-/// <reference types="vite/client" />
-
 /**
  * File: vitest.config.ts
  *
  * Responsibility:
- * Configure Vitest testing environment for React component testing.
+ * Central test configuration.
  *
  * Architectural Alignment:
- * - Testing Isolation
- * - Deterministic UI Testing
- * - Separation of Unit / Integration / E2E layers
+ * - Test isolation
+ * - Tool separation
  */
 
 import { defineConfig } from "vitest/config"
+import react from "@vitejs/plugin-react"
 
 export default defineConfig({
+
+  plugins: [react()],
+
   test: {
-
     globals: true,
-
     environment: "jsdom",
 
     setupFiles: "./tests/setup.ts",
@@ -30,9 +28,9 @@ export default defineConfig({
     ],
 
     exclude: [
+      "src/e2e/**",
       "node_modules",
-      "dist",
-      "e2e"
+      "dist"
     ]
   }
 })
