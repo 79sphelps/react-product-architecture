@@ -47,42 +47,46 @@ Core technologies used throughout the repository:
 
 # Repository Structure
 
-
 react-product-architecture
 
 /apps
-dashboard-demo
-booking-flow-demo
+  dashboard-demo
+  booking-flow-demo
 
 /patterns
-form-architecture
-data-fetching
-state-management
-error-handling
-accessibility
+  form-architecture -> DONE
+  data-fetching -> TBD
+  state-management
+    /feature-flags -> DONE
+  error-handling
+  accessibility
+  plugin-system-architecture -> DONE
 
 /performance
-rendering-optimization
-virtualization
-bundle-optimization
+  rendering-optimization
+  virtualization
+    /virtualized-data-grid -> DONE
+  bundle-optimization
 
 /components
-motion-patterns
-accessible-components
-headless-ui-patterns
+  motion-patterns
+  accessible-components
+  headless-ui-patterns
+    /command-palette -> DONE
+    /headless-data-table -> DONE
 
 /layouts
-dashboard-layout
-admin-layout
-auth-layout
+  dashboard-layout
+  admin-layout
+  auth-layout
 
 /testing
-unit-patterns
-integration-patterns
-e2e-patterns
+  unit-patterns
+  integration-patterns
+  e2e-patterns
 
 /docs
-architecture-decisions
+  architecture-decisions
 
 
 ---
