@@ -33,20 +33,20 @@ This project demonstrates how to build a scalable data-fetching layer with:
 
 ## Core
 
-- QueryClient → orchestrates queries
-- QueryCache → stores data
-- QueryObserver → connects UI to cache (subscription bridge)
+- QueryClient -> orchestrates queries
+- QueryCache -> stores data
+- QueryObserver -> connects UI to cache (subscription bridge)
 - useQuery = React adapter
 
 ## Hooks
 
-- useQuery → fetch + cache
-- useMutation → update data
+- useQuery -> fetch + cache
+- useMutation -> update data
 
 ## UI
 
-- QueryBoundary → handles loading/error
-- DataViewer → displays results
+- QueryBoundary -> handles loading/error
+- DataViewer -> displays results
 
 ## Data Fetching Pattern
 
