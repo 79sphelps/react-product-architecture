@@ -4,6 +4,7 @@
  */
 
 import { createContext, useState } from "react";
+import type { ReactNode } from "react";
 import { getPlugins } from "./PluginRegistry";
 import type { Plugin } from "./types";
 
@@ -12,7 +13,7 @@ export const PluginContext = createContext<{
   togglePlugin: (id: string) => void;
 } | null>(null);
 
-export function PluginProvider({ children }) {
+export function PluginProvider({ children }: { children: ReactNode }) {
   const [plugins, setPlugins] = useState(getPlugins());
 
   function togglePlugin(id: string) {

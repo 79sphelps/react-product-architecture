@@ -55,10 +55,10 @@ react-product-architecture
 
 /patterns
   form-architecture -> DONE
-  data-fetching -> TBD
+  data-fetching -> DONE
   state-management
     /feature-flags -> DONE
-  error-handling
+  error-handling -> DONE
   accessibility
   plugin-system-architecture -> DONE
 

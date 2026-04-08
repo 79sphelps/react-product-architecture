@@ -81,6 +81,7 @@ export function createQueryClient() {
 
   function invalidateQueries(key: string) {
     const existing = cache.get(key);
+
     if (!existing) return;
 
     cache.set(
